@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/910ce80589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>webpage Design</title>
+</head>
+<body>
+  <div class="container">
+      <header>
+           <div class="logo">
+              <img src="img/Frame.png">
+              <a href="">mamondots</a>
+           </div>
+           <div class="menu">
+             <ul>
+              <li><a href="">about</a></li>
+              <li><a href="">services</a></li>
+              <li><a href="">technologies</a></li>
+              <li><a href="">how to</a></li>
+             </ul>
+           </div>
+           <div class="header-btn">
+             <a href="" class="btn-01">contact us</a>
+             <a href="" class="btn-02">join mamon</a>
+           </div>
+      </header>
+      <div class="content">
+          <div class="content-info">
+              <h1><span>Diva</span> Into The Depths<br> of<span> Virtual Reality</span></h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                sed do eiusmod tempor incididunt ut labore et dolore <br>
+                nisl tincidunt eget. Lectus mauris eros in vitae .
+             </p>
+             <div class="contet-btns">
+                <a href="" class="content-btn">build your world</a>
+                <img src="img/arrow-small-right.png" class="btn-arrow">
+             </div>
+          </div>
+          <div class="content-img">
+             <img src="img/Rectangle 4.png" class="back-img">
+             <img src="img/Mask group.png" class="front-img">
+          </div>
+      </div>
+      <div class="line-img">
+          <img src="img/Vector 1.png" class="line-01">
+          <img src="img/Vector 2.png" class="line-02">
+          <img src="img/Vector 3.png" class="line-03">
+      </div>
+      <div class="contact-section">
+          <div class="contact-info">
+              <div class="contact-boxes">
+                 <div class="contact-box">
+                    <img src="img/Location-Icon.png">
+                    <div class="detils">
+                        <h2>Pay Us a Visit</h2>
+                        <p>
+                          Union St, Seattle, WA 98101, United States
+                        </p>
+                    </div>
+                 </div>
+
+                 <div class="contact-box">
+                  <img src="img/phone-call.png">
+                  <div class="detils">
+                      <h2>Give Us a Call</h2>
+                      <p>
+                        +88016462866
+                      </p>
+                  </div>
+               </div>
+
+               <div class="contact-box">
+                <img src="img/mail.png">
+                <div class="detils">
+                    <h2>Send Us a Message</h2>
+                    <p>
+                      mamonrabin@gmail.com
+                    </p>
+                </div>
+             </div>
+
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script>
+      let animation = anime({
+        targets:'header',
+        translateY:[-80,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine'
+      });
+
+      anime({
+        targets:'.content-info h1',
+        translateX:[-80,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine'
+      });
+
+      anime({
+        targets:'.content-info p',
+        translateX:[80,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:500
+      });
+
+      anime({
+        targets:'.contet-btns',
+        translateY:[40,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:600
+      });
+
+      anime({
+        targets:'.content-img',
+        translateX:[100,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:800
+      });
+
+      anime({
+        targets:'.line-img',
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:1200
+      });
+      anime({
+        targets:'.contact-section',
+        translateY:[80,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:1300
+      });
+
+
+</script>
+</body>
+</html>
